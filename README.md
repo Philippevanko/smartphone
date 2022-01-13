@@ -20,3 +20,4 @@ Police de caractères : Lato
 
 
 ![Preview](screenshot.png)
+white

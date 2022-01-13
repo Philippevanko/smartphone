@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root { /*variable */ 
+    --white: #ffffff;
+    --dark-opacity: rgba(0, 0, 0, 0.3);
+    --grey-opacity: rgba(233, 233, 233, 0.5);
+    --blue: #0e143c;
+    --blue-light: #179de9;
+    --blue-dark:#00507c;
+    --pink-light: #f1c6d7;
+    --red-opacity: rgba(255, 0, 0, 0.5);
+    
+}
+
+body {
+    background: linear-gradient(to bottom right ,#0e143c, #f1c6d7);
+}
+
+
+
+.logo {
+    width: 90px;
+}
+
+#leftMenu {
+    display: flex;
+    margin: auto;
+
+}
+
+#leftMenu nav ul li a{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
