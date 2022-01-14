@@ -34,7 +34,9 @@ header {
 
 .nav-left, 
 .nav-left ul,
-.nav-right ul {
+.nav-right ul,
+footer ul  {
+    
     display: flex;
     align-items: center;
     list-style: none;
@@ -43,7 +45,9 @@ header {
 
 /*solution 1 */
 .nav-left ul li a,
-.nav-right ul li a {
+.nav-right ul li a,
+footer ul li a {
+
     text-decoration: none;
     color: var(--white);
     font-size: 0.85rem;
@@ -116,5 +120,51 @@ main {
 }
 
 /*
+*Smartphone
+*/
+.smartphone {
+    position: relative;
+    width: 60%;
+    text-align: center;
+
+}
+
+/*https://developer.mozilla.org/fr/docs/Web/CSS/filter
+  https://css-tricks.com/almanac/proprieties/b/backdrop-filter/*/
+.smartphone img:nth-child(1),
+.smartphone img:nth-child(2) {
+    filter: drop-shadow(40px 40px 40px var(--red-opacity))
+}
+
+
+.smartphone img:nth-child(1) {
+    margin-right: 200px;
+}
+
+.smartphone img:nth-child(3) {
+    position: absolute;/*position absolute je le place ou je veux*/
+    /*display:none; permet de cacher un element */
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);/*deplacement de -50% sur l'hrizontal*/
+    filter: drop-shadow(40px 40px 40px var(--dark-opacity))
+    
+
+
+}
+
+/*
 **Footer
 */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--grey-opacity);
+    padding: 10px 0;
+}
+
+footer img {
+    width: 70px;
+    opacity:0.5;/*0.5 pour 50% pour l'opaciter de l'image*/
+}
