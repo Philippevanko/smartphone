@@ -13,24 +13,54 @@
 }
 
 body {
-    background: linear-gradient(to bottom right ,#0e143c, #f1c6d7);
+    font-familt: 'lato', sans-serif ;
+    font-size: 16px;
+    margin: 0;
+    background: transparent linear-gradient(to bottom right ,var(--blue),var(--pink-light) 100%); /*rotation; coleur de depart, couleur de font */
+}
+/**
+*Hearder
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid  var(--grey-opacity);/*je fais une ligne*/
+    padding: 10px 0;/*je la regle*/
+    width: 75%;
+    margin: auto;/*alignemùent auto*/
+    
 }
 
+.nav-left, 
+.nav-left ul,
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
 
+/*solution 1 */
+.nav-left ul li a,
+.nav-right ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.85rem;
+}
+
+/*solution 2*/
+/*header ul li a {
+    text-decoration: none;
+    color: var(--white)
+    */
 
 .logo {
     width: 90px;
 }
 
-#leftMenu {
-    display: flex;
-    margin: auto;
-
-}
-
-#leftMenu nav ul li a{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 40px;
+.button-light {
+    border: 1px solid var(--white);/*faire la ligner autour du boutton*/
+    border-radius: 20px;/*arrondir les angles */
+    padding: 4px 14px;/*regler le tour par rapport au text*/
 }
