@@ -16,7 +16,7 @@ body {
     font-family: 'lato', sans-serif ;
     font-size: 16px;
     margin: 0;
-    background: transparent linear-gradient(to bottom right ,var(--blue),var(--pink-light) 100%) fixed; /*rotation; coleur de depart, couleur de font */
+    background: transparent linear-gradient(to bottom right ,var(--blue),var(--pink-light) 100%) fixed; /*rotation; coleur de depart, couleur de font */ /*fixed evite la repetition du fond */
     /*height: 100vh;/*viewport heigth*/
     /*vw = vewport width*/
 }
@@ -36,7 +36,7 @@ header {
 .nav-left ul,
 .nav-right ul,
 footer ul  {
-    
+
     display: flex;
     align-items: center;
     list-style: none;
@@ -144,10 +144,10 @@ main {
 .smartphone img:nth-child(3) {
     position: absolute;/*position absolute je le place ou je veux*/
     /*display:none; permet de cacher un element */
-    top: -15%;
-    left: 50%;
+    top: -15%; /*alignement vertical*/
+    left: 50%; /*aligement vers la gauche */
     transform: translateX(-50%);/*deplacement de -50% sur l'hrizontal*/
-    filter: drop-shadow(40px 40px 40px var(--dark-opacity))
+    filter: drop-shadow(40px 40px 40px var(--dark-opacity))/* met un filtre a l'image */
     
 
 
